@@ -5,16 +5,16 @@ import { getRecommendations } from './suggestions.mjs';
 let weatherRules = []; // Aquí se guardarán cuando lleguen
 
 export function setWeatherRules(data) {
-    console.log("📥 Raw data received in setWeatherRules:", data);
+    console.log("Raw data received in setWeatherRules:", data);
     
     weatherRules = data.weatherRules || data.rules || data;
     
-    console.log("💾 Final weatherRules state:", weatherRules);
+    console.log("Final weatherRules state:", weatherRules);
 }
 
 // Process the weather data
 export async function processWeatherData(weatherData) {
-    console.log("🔍 Checking rules before matching:", weatherRules);
+    console.log("Checking rules before matching:", weatherRules);
 
     // Pasamos la variable global 'weatherRules'
     const recommendations = getRecommendations(weatherData, weatherRules);
