@@ -1,0 +1,69 @@
+{
+  "weatherRules": [
+    {
+      "id": "thunderstorm_warning",
+      "criteria": { "condition": "Thunderstorm" },
+      "dashboardTips": ["Stay indoors immediately", "Unplug electronics", "Avoid windows"],
+      "activityRatings": { "Golf": "Poor", "Beach": "Poor", "Biking": "Poor", "Gardening": "Poor" }
+    },
+    {
+      "id": "rainy_day",
+      "criteria": { "condition": "Rain" },
+      "dashboardTips": ["Take an umbrella", "Wear waterproof shoes", "Drive with caution"],
+      "activityRatings": { "Golf": "Poor", "Beach": "Poor", "Biking": "Poor", "Gym": "Great" }
+    },
+    {
+      "id": "drizzle_mist",
+      "criteria": { "condition": "Drizzle" },
+      "dashboardTips": ["Light rain: wear a hood", "Roads might be slippery", "Grab a light jacket"],
+      "activityRatings": { "Running": "Good", "Biking": "Good", "Gardening": "Poor", "Walking": "Great" }
+    },
+    {
+      "id": "extreme_heat",
+      "criteria": { "minTemp": 35 },
+      "dashboardTips": ["Danger: Extreme Heat", "Drink plenty of water", "Stay in the shade"],
+      "activityRatings": { "Beach": "Great", "Running": "Poor", "Hiking": "Poor", "Pool": "Great" }
+    },
+    {
+      "id": "clear_sky_warm",
+      "criteria": { "condition": "Clear", "minTemp": 25, "maxTemp": 34 },
+      "dashboardTips": ["Sunny day: use sunscreen", "Wear sunglasses", "Perfect for outdoors"],
+      "activityRatings": { "Golf": "Great", "Beach": "Great", "Biking": "Great", "Gardening": "Great" }
+    },
+    {
+      "id": "cloudy_pleasant",
+      "criteria": { "condition": "Clouds", "minTemp": 18, "maxTemp": 24 },
+      "dashboardTips": ["Nice cloudy day", "No sunscreen needed", "Comfortable temperature"],
+      "activityRatings": { "Golf": "Great", "Hiking": "Great", "Biking": "Great", "Running": "Great" }
+    },
+    {
+      "id": "windy_alert",
+      "criteria": { "minWindSpeed": 10 },
+      "dashboardTips": ["High winds: secure items", "Hold onto your hat", "Extra effort for cycling"],
+      "activityRatings": { "Biking": "Poor", "Sailing": "Great", "Golf": "Poor", "Beach": "Poor" }
+    },
+    {
+      "id": "chilly_weather",
+      "criteria": { "maxTemp": 17, "minTemp": 10 },
+      "dashboardTips": ["Cool day: wear a sweater", "Layer your clothes", "Enjoy a warm drink"],
+      "activityRatings": { "Running": "Great", "Hiking": "Great", "Gardening": "Good", "Beach": "Poor" }
+    },
+    {
+      "id": "cold_day",
+      "criteria": { "maxTemp": 9 },
+      "dashboardTips": ["Cold alert: wear a coat", "Protect your hands/ears", "Stay warm indoors"],
+      "activityRatings": { "Hiking": "Good", "Running": "Good", "Beach": "Poor", "Skiing": "Great" }
+    },
+    {
+      "id": "low_visibility",
+      "criteria": { "condition": "Mist" },
+      "dashboardTips": ["Foggy: use low beams", "Limited visibility", "Stay safe on the road"],
+      "activityRatings": { "Photography": "Great", "Hiking": "Poor", "Biking": "Poor", "Running": "Good" }
+    },
+    {
+      "id": "default",
+      "dashboardTips": ["Check the hourly forecast", "Stay hydrated", "Have a productive day"],
+      "activityRatings": { "Golf": "Good", "Beach": "Good", "Gardening": "Good", "Running": "Good" }
+    }
+  ]
+}

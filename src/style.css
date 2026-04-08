@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+    --primary-color: #A5D8FF;   /* Icy Blue */
+    --secondary-color: #FDF6E3; /* Ivory Mist */
+    --tertiary-color: #E6CCB2;  /* Pale Oak */
+    --accent-color: #6B705C;    /* Dusty Olive */
+    --white-alpha: rgba(255, 255, 255, 0.3);
+}
+
+/* 2. BASE STYLES */
+body {
+    font-family: 'Lora', serif;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1, h2, h3, .activity-name, .nav-item {
+    font-family: 'Inter', sans-serif;
+    color: var(--accent-color);
+    margin: 0 0 15px 0;
+}
+
+/* 3. LAYOUT CONTAINERS */
+.dashboard-container, .health-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 95%;
+}
+.health-container {
+    margin-top: 5%;
+}
+/* Header & Nav */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--white-alpha);
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    align-items: center;
+    line-height: 1;
+}
+
+.logo i {
+    font-size: 1.5em;
+    color: var(--accent-color);
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    color: var(--accent-color);
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.08); /* Fondo gris muy suave */
+    transform: translateY(-2px); /* Un pequeño salto hacia arriba */
+}
+
+/* 4. COMPONENTS (Cards & Search) */
+.card, .activity-card {
+    background-color: var(--secondary-color);
+    padding: 25px;
+    border-radius: 20px; /* Unified radius */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(107, 112, 92, 0.2);
+}
+
+#search-input{
+    width: 192px;
+
+}
+
+.search-box {
+    display: flex;
+    background: var(--tertiary-color);
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--accent-color);
+}
+
+.search-box button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--accent-color);
+}
+
+.search-wrapper {
+    position: relative;
+    width: 300px;
+}
+
+#suggestions-container {
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    z-index: 1000; /* Para que flote sobre todo */
+    max-height: 250px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: #333; /* Asegúrate de que el texto sea visible */
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+/* 5. GRIDS */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+/* 6. WEATHER SPECIFICS */
+.large-temp { 
+    font-size: 5rem; 
+    font-weight: 900; 
+    font-family: 'Inter', sans-serif;
+}
+
+.forecast-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.forecast-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--tertiary-color);
+}
+
+/* 7. HEALTH INDICATORS */
+.indicator-bar {
+    height: 6px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: rgba(0,0,0,0.05); /* Track background */
+}
+
+.bar-green  { background-color: #2ecc71; width: 100%; }
+.bar-yellow { background-color: #f1c40f; width: 60%; }
+.bar-red    { background-color: #e74c3c; width: 20%; }
+
+
+/* Container for the card */
+.card.main-weather {
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Sombra suave para profundidad */
+    text-align: left; /* Alineación a la izquierda se ve más moderna */
+}
+
+/* City Name */
+#city-name {
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--accent-color); /* Color casi negro para legibilidad */
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+/* Date Display */
+.subtitle {
+    font-size: 2em;
+    color: var(--accent-color); /* Gris medio para jerarquía secundaria */
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Weather Info Row */
+.weather-info {
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: space-between; /* Separa la temp del icono */
+    background: var(--tertiary-color); /* Fondo ligero para resaltar esta sección */
+    padding: 1rem 1.5rem;
+    border-radius: 16px;
+}
+
+/* Temperature */
+.large-temp {
+    font-size: 4.5em;
+    font-weight: 700;
+    color: var(--accent-color); /* Color casi negro para legibilidad */
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Icon */
+#weather-icon {
+    font-size: 4em;
+    color: var(--accent-color); /* Un color ámbar/sol para dar "vida" al icono */
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+/* 6. WEATHER CARD - VERSION COMPACTA HORIZONTAL */
+.card.main-weather {
+    border-radius: 24px;
+    padding: 1.2rem 2rem; /* Reducimos padding vertical */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto; /* Evita que se estire innecesariamente */
+}
+
+/* Contenedor que agrupa Ciudad y Clima en la misma fila */
+.weather-main-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.city-info2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.city-info2 #city-name {
+    font-size: 2.2em; /* Reducido de 3em para que no empuje hacia abajo */
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 1.1em; /* Más pequeño y elegante */
+    margin: 0;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.large-temp {
+    font-size: 3em; /* Reducido de 4.5em */
+    font-weight: 700;
+    margin: 0;
+}
+
+#weather-icon {
+    font-size: 2.8em; /* Reducido de 4em */
+    color: var(--accent-color);
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+
+
+/* 8. RESPONSIVE */
+@media (max-width: 850px) {
+    .content-grid, .activity-grid { 
+        grid-template-columns: 1fr; 
+    }
+    header { 
+        flex-direction: column; 
+        gap: 15px; 
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloSky Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header id="main-header">          
+        </header>
+
+        <main class="content-grid">
+            <div class="card main-weather">
+                <h2 id="city-name">Loading...</h2>
+                <p id="date-display" class="subtitle"></p>
+                <div class="weather-info">
+                    <span id="current-temp" class="large-temp">--°</span>
+                    <i id="weather-icon" class="fa-solid fa-sun"></i>
+                </div>
+            </div>
+
+           <div class="card forecast-card">
+                <h3>7-Day Forecast</h3>
+                <div id="forecast-container" class="forecast-list">
+                </div>
+            </div>
+
+            <div class="card suggestions-card">
+                <h3>HelloSky Suggestions</h3>
+                <ul id="suggestions-list">
+                    </ul>
+            </div>
+        </main>
+        <footer id="main-footer">
+        </footer>
+    </div>
+</body>
+</html>

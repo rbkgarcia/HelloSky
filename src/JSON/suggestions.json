@@ -1,0 +1,147 @@
+{
+  "weatherRules": [
+    {
+      "condition": "Thunderstorm",
+      "minTemp": -10,
+      "maxTemp": 50,
+      "suggestions": [
+        "Stormy weather. Stay indoors and away from windows.",
+        "Unplug sensitive electronics from outlets.",
+        "Avoid using water or landline phones during lightning."
+      ],
+      "activityRatings": { "Golf": "Poor", "Biking": "Poor", "Running": "Poor", "Swimming": "Poor", "Gym": "Great" }
+    },
+    {
+      "condition": "Clear",
+      "minTemp": 31,
+      "maxTemp": 60,
+      "suggestions": [
+        "Extreme heat! Wear sunscreen and a hat.",
+        "Stay hydrated and avoid direct sun exposure.",
+        "Seek air-conditioned spaces if possible."
+      ],
+      "activityRatings": { "Beach": "Great", "Swimming": "Great", "Running": "Poor", "Hiking": "Poor", "Gym": "Great" }
+    },
+    {
+      "condition": "Clear",
+      "minTemp": 15,
+      "maxTemp": 30,
+      "suggestions": [
+        "Beautiful sunny day! Ideal for outdoor activities.",
+        "Don't forget your sunglasses.",
+        "Perfect weather for a walk or a bike ride."
+      ],
+      "activityRatings": { "Running": "Great", "Cycling": "Great", "Hiking": "Great", "Golf": "Great", "Beach": "Great" }
+    },
+    {
+      "condition": "Clear",
+      "minTemp": -30,
+      "maxTemp": 14,
+      "suggestions": [
+        "Sunny but crisp. A heavy jacket is needed.",
+        "The sun is out, but the air is cold—dress in layers.",
+        "Great day for a brisk walk, but stay bundled up."
+      ],
+      "activityRatings": { "Running": "Good", "Hiking": "Good", "Biking": "Poor", "Gym": "Great", "Walking": "Great" }
+    },
+    {
+      "condition": "Clouds",
+      "minTemp": 20,
+      "maxTemp": 40,
+      "suggestions": [
+        "Warm and cloudy. Humidity might feel high.",
+        "Good 'flat' light for outdoor photography.",
+        "Comfortable for exercise without the harsh sun."
+      ],
+      "activityRatings": { "Running": "Great", "Hiking": "Great", "Biking": "Great", "Photography": "Great", "Golf": "Good" }
+    },
+    {
+      "condition": "Clouds",
+      "minTemp": -30,
+      "maxTemp": 19,
+      "suggestions": [
+        "Grey skies today. Keep a light sweater handy.",
+        "Cool and overcast—perfect for a cozy indoor day.",
+        "A bit gloomy, but good weather for running."
+      ],
+      "activityRatings": { "Running": "Great", "Hiking": "Good", "Gym": "Great", "Walking": "Good", "Biking": "Good" }
+    },
+    {
+      "condition": "Rain",
+      "minTemp": 18,
+      "maxTemp": 40,
+      "suggestions": [
+        "Warm rain/Tropical vibes. Bring a light umbrella.",
+        "High humidity expected. Stay fresh.",
+        "Indoor shopping or movies are great options today."
+      ],
+      "activityRatings": { "Gym": "Great", "Swimming": "Poor", "Hiking": "Poor", "Biking": "Poor", "Walking": "Poor" }
+    },
+    {
+      "condition": "Rain",
+      "minTemp": 0,
+      "maxTemp": 17,
+      "suggestions": [
+        "Cold rain. Wear waterproof boots and a warm coat.",
+        "Stay dry! Hypothermia risk is higher in wet, cold weather.",
+        "A perfect day for hot soup and indoor relaxation."
+      ],
+      "activityRatings": { "Gym": "Great", "Running": "Poor", "Hiking": "Poor", "Biking": "Poor", "Golf": "Poor" }
+    },
+    {
+      "condition": "Snow",
+      "minTemp": -40,
+      "maxTemp": 5,
+      "suggestions": [
+        "Snowy day! Wear thermal layers and gloves.",
+        "Watch your step on icy sidewalks.",
+        "Clear your driveway and enjoy the winter wonderland."
+      ],
+      "activityRatings": { "Skiing": "Great", "Hiking": "Poor", "Running": "Poor", "Gym": "Great", "Biking": "Poor" }
+    },
+    {
+      "condition": "Drizzle",
+      "minTemp": -10,
+      "maxTemp": 40,
+      "suggestions": [
+        "Light misting. A hooded windbreaker should be enough.",
+        "Roads might be extra slick; drive carefully.",
+        "Outdoor plants will love this gentle watering."
+      ],
+      "activityRatings": { "Running": "Good", "Walking": "Good", "Biking": "Poor", "Gardening": "Poor", "Gym": "Great" }
+    },
+    {
+      "condition": "Mist",
+      "minTemp": -10,
+      "maxTemp": 40,
+      "suggestions": [
+        "Low visibility. Use your fog lights if driving.",
+        "The air is very damp—careful with your hair!",
+        "Quiet, moody atmosphere. Enjoy the silence."
+      ],
+      "activityRatings": { "Photography": "Great", "Running": "Good", "Biking": "Poor", "Hiking": "Poor", "Gym": "Great" }
+    },
+    {
+      "condition": "Fog",
+      "minTemp": -10,
+      "maxTemp": 40,
+      "suggestions": [
+        "Dense fog. Reduced visibility—travel with caution.",
+        "Stay on marked paths if hiking or walking.",
+        "Everything will look mysterious today!"
+      ],
+      "activityRatings": { "Photography": "Great", "Walking": "Poor", "Biking": "Poor", "Hiking": "Poor", "Gym": "Great" }
+    },
+    {
+      "condition": "Default",
+      "minTemp": -100,
+      "maxTemp": 100,
+      "suggestions": [
+        "Check HelloSky for live updates.",
+        "Have a wonderful day, no matter the sky!",
+        "Stay prepared and stay awesome."
+      ],
+      "activityRatings": { "Running": "Good", "Walking": "Good", "Biking": "Good", "Gym": "Good", "Golf": "Good" }
+    }
+  ]
+}

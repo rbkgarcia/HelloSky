@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <script type="module" src="../js/healthActivities.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="dashboard-container">
+        <header id="main-header"></header>
+        <main>
+            <div class="card main-weather compact-weather">
+                <div class="weather-main-group">
+                    <div class="city-info2">
+                        <h2 id="city-name">Loading...</h2>
+                        <p id="date-display" class="subtitle"></p>
+                    </div>
+                    <div class="weather-stats">
+                        <span id="current-temp" class="large-temp">--°</span>
+                        <i id="weather-icon" class="fa-solid fa-sun"></i>
+                    </div>
+                </div>
+            </div>
+            <section class="health-container">
+                <div class="activity-group">
+                    <h3>Outdoor Activities</h3>
+                    <p class="activity-subtitle">What should I do Today?</p>
+                    <div id="outdoor-grid" class="activity-grid"></div> 
+                </div>
+            </section>
+        </main>
+        <footer id="main-footer"></footer>
+        </div>
+    </body>
+</html>
